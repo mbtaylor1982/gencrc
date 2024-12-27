@@ -7,7 +7,7 @@ on:
     tags:
       - "release_*"
 jobs:
-   build_gencrc:
+  build_gencrc:
     uses: build.yml
     secrets: inherit
   create_release:
