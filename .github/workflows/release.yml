@@ -27,4 +27,4 @@ jobs:
         body: |
           gencrc ${{ github.ref_name }}
         files: |
-          gencrc
+          ./gencrc.zip/gencrc

@@ -18,6 +18,6 @@ jobs:
     - name: Upload gencrc
       uses: actions/upload-artifact@v4
       with:
-        name: gencrc
+        name: gencrc.zip
         path: gencrc
         retention-days: 14
