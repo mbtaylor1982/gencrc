@@ -8,10 +8,10 @@ on:
       - "release_*"
 jobs:
    build_gencrc:
-    uses: ./.github/workflows/build.yml
+    uses: build.yml
     secrets: inherit
   create_release:
-    needs: [build_gencrc,]
+    needs: build_gencrc
     runs-on: ubuntu-latest
     steps:
       - name: download artifacts
