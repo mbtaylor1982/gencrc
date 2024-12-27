@@ -1,0 +1,15 @@
+name: Build gencrc
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: gcc:latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Invoke Makefile
+        run: make
